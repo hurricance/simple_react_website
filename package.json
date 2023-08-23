@@ -23,8 +23,7 @@
     "react-dom": "^18.2.0",
     "react-quill": "^2.0.0",
     "react-router-dom": "^6.15.0",
-    "rollup-plugin-visualizer": "^5.9.2",
-    "source-map-explorer": "^2.5.3"
+    "rollup-plugin-visualizer": "^5.9.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

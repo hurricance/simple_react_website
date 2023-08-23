@@ -1,6 +1,6 @@
 # SIMPLE REACT APP
 
-Before using the app, ensure that you install the -[pnpm](https://pnpm.io/)
+Before using the app, ensure that you install the [pnpm](https://pnpm.io/)
 if not, run the following command
 ```
 npm install -g pnpm

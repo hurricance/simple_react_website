@@ -1,0 +1,41 @@
+{
+  "name": "fuckpc",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "server": "json-server --watch db.json --port 3000",
+    "analyze": "source-map-explorer '/dist/assets/*.js'"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.2.5",
+    "antd": "^5.8.3",
+    "axios": "^1.4.0",
+    "dayjs": "^1.11.9",
+    "echarts": "^5.4.3",
+    "mobx": "^6.10.0",
+    "mobx-react-lite": "^4.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-quill": "^2.0.0",
+    "react-router-dom": "^6.15.0",
+    "rollup-plugin-visualizer": "^5.9.2",
+    "source-map-explorer": "^2.5.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react-swc": "^3.3.2",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "json-server": "^0.17.3",
+    "sass": "^1.65.1",
+    "vite": "^4.4.5"
+  }
+}

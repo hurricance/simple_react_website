@@ -1,12 +1,23 @@
 import { RouterProvider } from 'react-router-dom'
 
-import React from 'react'
+import { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 
 import router from './router'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <Suspense
+    fallback={
+      <div
+        style={{
+          textAlign: 'center',
+          marginTop: 200
+        }}
+      >
+        loading...
+      </div>
+    }
+  >
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </Suspense>
 )

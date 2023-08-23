@@ -1,13 +1,16 @@
 import { createBrowserRouter } from 'react-router-dom'
 import { Navigate } from 'react-router-dom'
 
-import Layout from '../pages/Layout'
-import Login from '../pages/Login'
+import { lazy } from 'react';
+
+const Layout = lazy(() => import('/src/pages/Layout'))
+const Login = lazy(() => import('/src/pages/Login'))
+
 import { AuthRoute } from '../components/AuthComponent'
 
-import Home from '/src/pages/Home'
-import Article from '/src/pages/Article'
-import Publish from '/src/pages/Publish'
+const Home = lazy(() => import('/src/pages/Home'))
+const Article = lazy(() => import('/src/pages/Article'))
+const Publish = lazy(() => import('/src/pages/Publish'))
 
 const router = createBrowserRouter([
     {
@@ -19,7 +22,6 @@ const router = createBrowserRouter([
                 element: <Article />
             },
             {
-                // path: 'home',
                 index: 'true',
                 element: <Home />
             },
